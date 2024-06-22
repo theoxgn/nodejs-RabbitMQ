@@ -3,7 +3,7 @@ var router = express.Router();
 const rabbitMQ = require('./rabbitmq');
 
 router.post("/send-message", async (req, res) => {
-    const message = "Hello!";
+    const { message } = req.body.message;
     try {
         await rabbitMQ.sendMessageToQueue(message);
         res.send({ message: 'Message sent successfully!' });
