@@ -1,0 +1,17 @@
+{
+  "name": "nodeandrabbitmq",
+  "version": "1.0.0",
+  "description": "~",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "theoxgn",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "winston": "^3.13.0"
+  }
+}
